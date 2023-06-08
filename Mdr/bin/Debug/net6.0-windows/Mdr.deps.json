@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Mdr/1.4.3": {
+      "Mdr/1.4.4": {
         "dependencies": {
           "FontAwesome.WPF": "4.7.0.9",
           "Guna.UI2.WinForms": "2.0.4",
@@ -361,7 +361,7 @@
     }
   },
   "libraries": {
-    "Mdr/1.4.3": {
+    "Mdr/1.4.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
