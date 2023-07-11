@@ -1,2 +1,3 @@
-2023/06/09-14:24:02.359 5960 Creating DB D:\WPF\Hi7Update\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\Local Storage\leveldb since it was missing.
-2023/06/09-14:24:02.375 5960 Reusing MANIFEST D:\WPF\Hi7Update\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2023/06/26-15:31:49.989 51e8 Reusing MANIFEST D:\WPF\Hi7Update\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2023/06/26-15:31:49.990 51e8 Recovering log #3
+2023/06/26-15:31:49.992 51e8 Reusing old log D:\WPF\Hi7Update\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\Local Storage\leveldb/000003.log 
