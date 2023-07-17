@@ -1,2 +1,3 @@
-2023/06/09-14:24:02.250 6ab8 Creating DB D:\WPF\Hi7Update\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\shared_proto_db\metadata since it was missing.
-2023/06/09-14:24:02.253 6ab8 Reusing MANIFEST D:\WPF\Hi7Update\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2023/06/26-15:31:49.952 6ad0 Reusing MANIFEST D:\WPF\Hi7Update\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/MANIFEST-000001
+2023/06/26-15:31:49.952 6ad0 Recovering log #3
+2023/06/26-15:31:49.952 6ad0 Reusing old log D:\WPF\Hi7Update\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\shared_proto_db\metadata/000003.log 
