@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Mdr/1.4.4": {
+      "Mdr/1.4.5": {
         "dependencies": {
           "FontAwesome.WPF": "4.7.0.9",
           "Guna.UI2.WinForms": "2.0.4",
@@ -17,6 +17,7 @@
           "MaterialDesignThemes": "4.5.0",
           "Microsoft.Web.WebView2": "1.0.1518.46",
           "Newtonsoft.Json": "13.0.1",
+          "QRCoder": "1.4.3",
           "RestSharp": "106.11.7",
           "System.Drawing.Common": "6.0.0",
           "System.Xml.ReaderWriter": "4.3.1",
@@ -211,6 +212,17 @@
           "lib/net40/pcsc-sharp.dll": {
             "assemblyVersion": "3.7.0.0",
             "fileVersion": "3.7.0.0"
+          }
+        }
+      },
+      "QRCoder/1.4.3": {
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/QRCoder.dll": {
+            "assemblyVersion": "1.4.3.0",
+            "fileVersion": "1.4.3.0"
           }
         }
       },
@@ -442,7 +454,7 @@
     }
   },
   "libraries": {
-    "Mdr/1.4.4": {
+    "Mdr/1.4.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -551,6 +563,13 @@
       "sha512": "sha512-7qxMwgKCOLA5zhhW/d5exG8hOMSRyGC2/oSH0y5KQTyF3qYfDIHHTImAfXP5Ld8DzIBe4G9RsGyZWa+bLrOsQg==",
       "path": "pcsc/3.7.0",
       "hashPath": "pcsc.3.7.0.nupkg.sha512"
+    },
+    "QRCoder/1.4.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fWuFqjm8GTlEb2GqBl3Hi8HZZeZQwBSHxvRPtPjyNbT82H0ff0JwavKRBmMaXCno1Av6McPC8aJzri0Mj2w9Jw==",
+      "path": "qrcoder/1.4.3",
+      "hashPath": "qrcoder.1.4.3.nupkg.sha512"
     },
     "RestSharp/106.11.7": {
       "type": "package",
