@@ -1,0 +1,684 @@
+﻿<Window x:Class="Hi7.Forms.frmMainmenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        xmlns:local="clr-namespace:Hi7.Forms"
+        mc:Ignorable="d"
+         WindowStyle="None"
+        ResizeMode="NoResize"
+        FontFamily="TH SarabunPSK"
+        FontSize="20" 
+        AllowsTransparency="True" WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        Title="frmMainmenu" 
+        Height="768" Width="1366"  Loaded="Window_Loaded">
+    <Border Background="#FF599D7E" CornerRadius="20">
+        <Grid x:Name="borderMainmenu">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="23*"/>
+                <RowDefinition Height="169*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="84*"/>
+                <ColumnDefinition Width="585*"/>
+                <ColumnDefinition Width="14*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="188"/>
+                    <RowDefinition Height="488"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Margin="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="29*"/>
+                        <RowDefinition Height="60*"/>
+                    </Grid.RowDefinitions>
+                    <Border Background="#FF2A674B" CornerRadius="20" Grid.RowSpan="2" Margin="0,0,10,0">
+
+
+                    </Border>
+                    <StackPanel Grid.Row="0" Orientation="Horizontal">
+                        <materialDesign:PackIcon Margin="10" Kind="LoudspeakerOutline" Height="36" Width="46" Foreground="White"/>
+                        <TextBlock Text="ประกาศจากโรงพยาบาล" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="White"/>
+
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="232"/>
+                        <ColumnDefinition Width="232"/>
+                        <ColumnDefinition Width="232"/>
+                        <ColumnDefinition Width="232"/>
+                        <ColumnDefinition Width="232"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="112"/>
+                        <RowDefinition Height="112"/>
+                        <RowDefinition Height="112"/>
+                        <RowDefinition Height="112"/>
+                        <RowDefinition Height="112"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid x:Name="gridRows1" Grid.Row="0" Grid.Column="0" Margin="5,5,5,5">
+
+                        <Border x:Name="borderMdr" Background="#FF2A674B" CornerRadius="20"  OpacityMask="Black" MouseLeftButtonDown="menuMdr_MouseLeftButtonDown">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconCard" Kind="CardAccountDetails" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockMdr" Text="เวชระเบียน" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrIn}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrout}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="1" Margin="5,5,5,5">
+                        <Border x:Name="borderNurse" Background="#FF2A674B" CornerRadius="20" MouseRightButtonDown="borderNurse_MouseRightButtonDown" MouseLeftButtonDown="borderNurse_MouseLeftButtonDown">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconNurse" Kind="Doctor" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockNurse" Text="บริการผู้ป่วยนอก" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="2" Margin="5,5,5,5">
+                        <Border x:Name="borderDoctor" Background="#FF2A674B" CornerRadius="20">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconIpd" Kind="Bed" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockIpd" Text="บริการผู้ป่วยใน" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="3" Margin="5,5,5,5">
+                        <Border x:Name="borderDtt" Background="#FF2A674B" CornerRadius="20" MouseLeftButtonDown="borderDtt_MouseLeftButtonDown">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Width="232">
+                                <materialDesign:PackIcon x:Name="packIconDt" Kind="Dentist" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockDt" Text="ทันตกรรม" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="0" Grid.Column="4" Margin="5,5,5,5">
+                        <Border x:Name="borderLab" Background="#FF2A674B" CornerRadius="20" MouseLeftButtonDown="borderLab_MouseLeftButtonDown">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconLab" Kind="Flask" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockLab" Text="เทคนิคการแพทย์" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="0" Margin="5,5,5,5">
+                        <Border x:Name="borderXray" Background="#FF2A674B" CornerRadius="20" MouseLeftButtonDown="borderXray_MouseLeftButtonDown">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconXray" Kind="RadiologyBoxOutline" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockXray" Text="รักสีวิทยา" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="1" Margin="5,5,5,5">
+                        <Border x:Name="borderLr" Background="#FF2A674B" CornerRadius="20">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconLr" Kind="HumanBabyChangingTable" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockLr" Text="ห้องคลอด" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="2" Margin="5,5,5,5">
+                        <Border x:Name="borderOr" Background="#FF2A674B" CornerRadius="20">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconAntt" Kind="Knife" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockAntt" Text="หัตถการและวิสัญญี" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="3" Margin="5,5,5,5">
+                        <Border x:Name="borderPhm" Background="#FF2A674B" CornerRadius="20" MouseLeftButtonDown="borderPhm_MouseLeftButtonDown">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconPhm" Kind="pill" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockPhm" Text="เภสัชกรรม" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="4" Margin="5,5,5,5">
+                        <Border x:Name="borderPhy" Background="#FF2A674B" CornerRadius="20">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconPhy" Kind="Accessible" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockPhy" Text="กายภาพบำบัด" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="0" Margin="5,5,5,5">
+                        <Border x:Name="borderPsn" Background="#FF2A674B" CornerRadius="20">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconPsn" Kind="UserGroup" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockPsn" Text="ระบบบุคลากร" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="1" Margin="5,5,5,5">
+                        <Border x:Name="borderSlr" Background="#FF2A674B" CornerRadius="20">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconSlr" Kind="Dollar" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockSlr" Text="ระบบเงินเดือน" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="2" Margin="5,5,5,5">
+                        <Border x:Name="borderCr" Background="#FF2A674B" CornerRadius="20">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconCr" Kind="CashMultiple" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockCr" Text="ห้องเก็บเงิน" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="3" Margin="5,5,5,5">
+                        <Border x:Name="borderFood" Background="#FF2A674B" CornerRadius="20">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconFood" Kind="CutleryVariant" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockFood" Text="โภชนาการ" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="2" Grid.Column="4" Margin="5,5,5,5">
+                        <Border x:Name="borderRp" Background="#FF2A674B" CornerRadius="20">
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconRp" Kind="GraphBarStacked" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockRp" Text="รายงานในระบบ" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="0" Margin="5,5,5,5"/>
+                    <Grid Grid.Row="3" Grid.Column="1" Margin="5,5,5,5"/>
+                    <Grid Grid.Row="3" Grid.Column="2" Margin="5,5,5,5"/>
+                    <Grid Grid.Row="3" Grid.Column="3" Margin="5,5,5,5">
+                        <Border x:Name="borderStp" Background="#FF2A674B" CornerRadius="20" MouseLeftButtonDown="borderStp_MouseLeftButtonDown">
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconSt" Kind="GearOutline" Height="74" Width="78" Margin="10,0,10,0" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockSt" Text="ตั้งค่าระบบ" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FF599D7E" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+                    <Grid Grid.Row="3" Grid.Column="4" Margin="5,5,5,5">
+                        <Border x:Name="borderExit" Background="Red" CornerRadius="20" MouseLeftButtonDown="borderExit_MouseLeftButtonDown" >
+
+                            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                <materialDesign:PackIcon x:Name="packIconExit" Kind="Power" Height="74" Width="78" Margin="10,0,10,0" Foreground="White" RenderTransformOrigin="0.5,0.5" >
+                                    <materialDesign:PackIcon.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </materialDesign:PackIcon.RenderTransform>
+                                </materialDesign:PackIcon>
+
+                                <TextBlock x:Name="textBlockExit" Text="Exit" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" FontWeight="Bold" Foreground="White" RenderTransformOrigin="0.5,0.5">
+                                    <TextBlock.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </TextBlock.RenderTransform>
+                                </TextBlock>
+                            </StackPanel>
+                            <!--<Border.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                                <EventTrigger RoutedEvent="MouseLeave">
+                                    <BeginStoryboard Storyboard="{StaticResource StoryboardMdrin}"/>
+                                </EventTrigger>
+                            </Border.Triggers>-->
+                        </Border>
+                    </Grid>
+
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

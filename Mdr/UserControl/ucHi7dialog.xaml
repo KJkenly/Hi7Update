@@ -1,0 +1,140 @@
+﻿<UserControl x:Class="Mdr.UserControl.ucHi7dialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Mdr.UserControl"
+             xmlns:hc="https://handyorg.github.io/handycontrol"              
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Loaded="UserControl_Loaded" Foreground="{x:Null}">
+    <UserControl.Resources>
+        <Storyboard x:Key="Storyboardopen">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="gifImage" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="btnucYes" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-75"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-59"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-45"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-35"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-20"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-10"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="10"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.3000000" Value="-10"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-15"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="btnucNo" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-75"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-59"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-45"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-35"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-20"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-10"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-4"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="10"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.3000000" Value="-10"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-15"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="gifImage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-14.329"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-28"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-44.329"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-59.329"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-64.329"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-54.329"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="-39.329"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-23"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="-29.329"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="-39.329"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-48"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.3000000" Value="-58"/>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetName="gifImage" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
+                <EasingPointKeyFrame KeyTime="00:00:01.3000000" Value="0.5,0.5"/>
+                <EasingPointKeyFrame KeyTime="00:00:01.4000000" Value="0.514,0.403"/>
+            </PointAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetName="border" Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)">
+                <EasingColorKeyFrame KeyTime="00:00:01.5000000" Value="#FFFF9E27"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="btnucYes" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="15"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="40"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.9000000" Value="65"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="85"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.1000000" Value="100"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.2000000" Value="115"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="btnucNo" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.6000000" Value="-10"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.8000000" Value="-30"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.9000000" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="-75"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.1000000" Value="-95"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:02.2000000" Value="-110"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Storyboardopen}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+    <Border x:Name="border" CornerRadius="15" Background="Black" >
+        <Grid>
+
+            <StackPanel Orientation="Horizontal">
+                
+            </StackPanel>
+            <Button x:Name="btnucNo" Content="Close" HorizontalAlignment="Left" Height="46" Margin="540,394,0,0" VerticalAlignment="Top" Width="250" Background="#FFFF4A4A" Foreground="White" FontSize="26" Click="btnucNo_Click" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+
+            <Button x:Name="btnucYes" Content="Yes" HorizontalAlignment="Left" Height="46" Margin="10,394,0,0" VerticalAlignment="Top" Width="250" Background="#FF599D7E" Foreground="White" FontSize="26" Click="btnucYes_Click" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+
+            <hc:GifImage x:Name="gifImage" HorizontalAlignment="Center" Height="360" Margin="0,43,0,0" VerticalAlignment="Top" Width="360" Source="/UserControl/alert.png" RenderTransformOrigin="0.5,0.5">
+                <hc:GifImage.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </hc:GifImage.RenderTransform>
+            </hc:GifImage>
+            <Border CornerRadius="15" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="148" Margin="0,225,0,0" VerticalAlignment="Top" Width="780" Background="White">
+                <TextBox x:Name="tbAlert" TextWrapping="Wrap" Text="เตือนแล้วนะ" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="20" FontWeight="Bold" Margin="9,0,9,0" Height="128"/>
+
+            </Border>
+
+        </Grid>
+    </Border>
+</UserControl>

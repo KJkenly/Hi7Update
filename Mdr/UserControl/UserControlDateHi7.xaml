@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="Mdr.UserControl.UserControlDateHi7"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:hc="https://handyorg.github.io/handycontrol"
+             xmlns:local="clr-namespace:Mdr.UserControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="101" d:DesignWidth="247">
+    <Grid Height="100" VerticalAlignment="Top">
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Width="77">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="วัน" Background="{x:Null}" BorderBrush="{x:Null}" Width="21" FontSize="17" Height="39" Padding="0,5,0,8" FontFamily="kanit"/>
+                    <TextBox x:Name="searchTextBoxDay" Margin="0,0,0,0" FontSize="17" Cursor="Hand" BorderBrush="#599d7e" BorderThickness="0,0,0,2"
+                     TextChanged="searchTextBoxDay_TextChanged" KeyUp="searchTextBoxDay_KeyUp" Height="39" Width="55" FontFamily="kanit" />
+                </StackPanel>
+                <ListBox x:Name="autoCompleteListBoxDay"  Visibility="Collapsed" BorderBrush="#599d7e" FontFamily="kanit"
+                 SelectionChanged="autoCompleteListBoxDay_SelectionChanged" Width="55" Height="60" HorizontalAlignment="Left" Margin="21,0,0,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="93">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="เดือน" Background="{x:Null}" BorderBrush="{x:Null}" Width="37" FontSize="17" Height="39" Padding="0,5,0,8" FontFamily="kanit"/>
+                    <TextBox x:Name="searchTextBoxMonth" Margin="0,0,0,0" FontSize="17" Cursor="Hand" BorderBrush="#599d7e" BorderThickness="0,0,0,2" Height="39" Width="55" KeyUp="searchTextBoxMonth_KeyUp" TextChanged="searchTextBoxMonth_TextChanged" />
+                </StackPanel>
+                <ListBox x:Name="autoCompleteListBoxMonth"  Visibility="Collapsed" BorderBrush="#599d7e" FontFamily="kanit"
+                  Width="55" Height="60" HorizontalAlignment="Left" Margin="37,0,0,0" SelectionChanged="autoCompleteListBoxMonth_SelectionChanged"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Width="77">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="ปี" Background="{x:Null}" BorderBrush="{x:Null}" Width="21" FontSize="17" Height="39" Padding="0,5,0,8" FontFamily="kanit"/>
+                    <TextBox x:Name="searchTextBoxYear" Margin="0,0,0,0" FontSize="17" Cursor="Hand" BorderBrush="#599d7e" BorderThickness="0,0,0,2"
+                     Height="39" Width="55" KeyUp="searchTextBoxYear_KeyUp" TextChanged="searchTextBoxYear_TextChanged" />
+                </StackPanel>
+                <ListBox x:Name="autoCompleteListBoxYear"  Visibility="Collapsed" BorderBrush="#599d7e" FontFamily="kanit" Width="55" Height="60" HorizontalAlignment="Left" Margin="21,0,0,0" SelectionChanged="autoCompleteListBoxYear_SelectionChanged"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>

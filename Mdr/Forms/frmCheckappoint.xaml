@@ -1,0 +1,15 @@
+﻿<Window 
+        x:Class="Mdr.Forms.frmCheckappoint"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mdr.Forms"
+        mc:Ignorable="d"
+        Title="frmCheckappoint" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <GroupBox Margin="5" Header="ผู้มารับบริการมีรายการนัดเข้ารับบริการดังนี้">
+            <DataGrid x:Name="dataGridappoint" d:ItemsSource="{d:SampleData ItemCount=18}" AutoGenerateColumns="True" Margin="5" Background="#FF599D7E" GridLinesVisibility="All" IsReadOnly="True" MouseDoubleClick="dataGridappoint_MouseDoubleClick" />
+        </GroupBox>
+    </Grid>
+</Window>

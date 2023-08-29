@@ -1,0 +1,142 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Hi7.UsercontrolHi7"
+             xmlns:hc="https://handyorg.github.io/handycontrol" x:Class="Hi7.UsercontrolHi7.UserControlDatebox"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             mc:Ignorable="d" Width="230" Height="39">
+    <Grid>
+        <StackPanel x:Name="Datevalue">
+           
+            <hc:TextBox x:Name="txtDateThai" FontSize="17" Text="{Binding Text, RelativeSource={RelativeSource AncestorType={x:Type local:UserControlDatebox}}}" Width="230" TextChanged="txtDateThai_TextChanged">
+                <hc:TextBox.Template>
+                    <ControlTemplate TargetType="hc:TextBox">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>                           
+                            <TextBox x:Name="PART_TextBox" Text="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Text}"
+                             Background="{Binding TextBoxColor, RelativeSource={RelativeSource AncestorType={x:Type local:UserControlDatebox}}}"
+                             BorderThickness="{Binding TextBoxBorderThickness, RelativeSource={RelativeSource AncestorType={x:Type local:UserControlDatebox}}}"
+                             BorderBrush="{Binding TextBoxBorderBrush, RelativeSource={RelativeSource AncestorType={x:Type local:UserControlDatebox}}}" />
+     
+                            <Grid Margin="0,0,0,0">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,5,0">
+                                    <Button x:Name="btndate" Height="35" BorderBrush="{x:Null}" Background="{Binding TextBoxColor, RelativeSource={RelativeSource AncestorType={x:Type local:UserControlDatebox}}}" Click="btndate_Click" Width="18" Padding="0,6,0,6">
+                                        <materialDesign:PackIcon Kind="Calendar" VerticalAlignment="Center" Cursor="Hand" HorizontalAlignment="Center" Width="21" Height="38" Foreground="{Binding TextBoxBorderBrush, RelativeSource={RelativeSource AncestorType={x:Type local:UserControlDatebox}}}" />
+                                    </Button>
+                                    <Button x:Name="btndateClear" Height="35" BorderBrush="{x:Null}" Background="{x:Null}" Width="18" Padding="0,6,0,6" Click="btndateClear_Click">
+                                        <materialDesign:PackIcon  Kind="CloseBox" VerticalAlignment="Center" Cursor="Hand" HorizontalAlignment="Center" Width="21" Height="38" Foreground="#FFEC2929" />
+                                    </Button>
+                                </StackPanel>
+
+                            </Grid>
+
+                        </Grid>
+                    </ControlTemplate>
+                </hc:TextBox.Template>
+            </hc:TextBox>
+        </StackPanel>
+        <Popup x:Name="popupDatetime" Placement="Bottom" StaysOpen="False" AllowsTransparency="True"
+       HorizontalOffset="0" VerticalOffset="2" PopupAnimation="Slide" Height="50" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- Content of the Popup -->
+
+            <Border CornerRadius="5" Background="#FF8829EC" >
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <StackPanel Orientation="Vertical" Width="62">
+                        <StackPanel Orientation="Horizontal" Width="62">
+
+                            <StackPanel Orientation="Horizontal" Width="62">
+                                <Label Content="วัน" Background="{x:Null}" BorderBrush="{x:Null}" Width="21" FontSize="14" Height="39" Padding="0,8,0,8" FontFamily="kanit" Foreground="White"/>
+                                <Grid Width="41">
+                                    <TextBox  x:Name="searchTextBoxDay" x:FieldModifier="public" FontSize="17" Cursor="Hand" BorderBrush="#FF8829EC" BorderThickness="0,0,0,2"
+                         TextChanged="searchTextBoxDay_TextChanged" KeyUp="searchTextBoxDay_KeyUp" Height="39" FontFamily="kanit" Background="#FFEDEDED"/>
+                                    <Button  x:Name="btnCkickDay" Width="10" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0,5,0,5" Click="btnCkickDay_Click" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="31,0,0,0">
+                                        <Button.Content>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="▼" FontSize="10" Foreground="#FF8829EC"/>
+                                            </StackPanel>
+                                        </Button.Content>
+                                    </Button>
+                                    <Button  x:Name="btnClearCkickDay" Width="10" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="31,0,0,0" Padding="0,5,0,5" Click="btnClearCkickDay_Click" FontWeight="Bold" Visibility="Collapsed">
+                                        <Button.Content>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="X" FontSize="10" Height="13" FontWeight="Bold" Foreground="#FFFD0000"/>
+                                            </StackPanel>
+                                        </Button.Content>
+                                    </Button>
+                                    <Popup x:Name="popupDay" Placement="Bottom" StaysOpen="False" AllowsTransparency="True"
+                       HorizontalOffset="0" VerticalOffset="2">
+                                        <Border BorderThickness="2" VerticalAlignment="Bottom" CornerRadius="5">
+                                            <ListBox x:Name="autoCompleteListBoxDay" Height="100" Width="100" SelectionChanged="autoCompleteListBoxDay_SelectionChanged" BorderBrush="#FF599D7E" MouseLeftButtonUp="autoCompleteListBoxDay_MouseLeftButtonUp_1"/>
+                                        </Border>
+                                    </Popup>
+                                </Grid>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Width="81">
+                        <StackPanel Orientation="Horizontal" Width="81">
+                            <StackPanel Orientation="Horizontal" Width="81">
+                                <Label Content="เดือน" Background="{x:Null}" BorderBrush="{x:Null}" Width="34" FontSize="14" Height="39" Padding="0,8,0,8" FontFamily="kanit" Foreground="White"/>
+                                <Grid Width="47">
+                                    <TextBox  x:Name="searchTextBoxMonth" x:FieldModifier="public" FontSize="17" Cursor="Hand" BorderBrush="#FF8829EC" BorderThickness="0,0,0,2"
+                         TextChanged="searchTextBoxMonth_TextChanged" KeyUp="searchTextBoxMonth_KeyUp" Height="39" FontFamily="kanit" Background="#FFEDEDED"/>
+                                    <Button  x:Name="btnCkickMonth" Width="10" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="37,0,0,0" Padding="0,5,0,5" Click="btnCkickMonth_Click">
+                                        <Button.Content>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="▼" FontSize="10" HorizontalAlignment="Center" Foreground="#FF8829EC"/>
+                                            </StackPanel>
+                                        </Button.Content>
+                                    </Button>
+                                    <Button  x:Name="btnClearCkickMonth" Width="10" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="37,0,0,0" Padding="0,5,0,5" Click="btnClearCkickMonth_Click" FontWeight="Bold" Visibility="Collapsed">
+                                        <Button.Content>
+                                            <StackPanel Orientation="Vertical">
+                                                <TextBlock Text="X" FontSize="10" Height="13" FontWeight="Bold" Foreground="#FFFD0000"/>
+                                            </StackPanel>
+                                        </Button.Content>
+                                    </Button>
+                                    <Popup x:Name="popupMonth" Placement="Bottom" StaysOpen="False" AllowsTransparency="True" HorizontalOffset="0" VerticalOffset="2">
+                                        <Border BorderBrush="#599d7e" BorderThickness="1" Background="White" VerticalAlignment="Bottom" CornerRadius="5">
+                                            <ListBox x:Name="autoCompleteListBoxMonth"  Height="100" Width="100" SelectionChanged="autoCompleteListBoxMonth_SelectionChanged" MouseLeftButtonUp="autoCompleteListBoxMonth_MouseLeftButtonUp"/>
+                                        </Border>
+                                    </Popup>
+                                </Grid>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" Width="77">
+                        <StackPanel Orientation="Horizontal" Width="77">
+
+                            <StackPanel Orientation="Horizontal" Width="77">
+                                <Label Content="ปี" Background="{x:Null}" BorderBrush="{x:Null}" Width="14" FontSize="14" Height="39" Padding="0,8,0,8" FontFamily="kanit" Foreground="White"/>
+                                <Grid Width="63">
+                                    <TextBox  x:Name="searchTextBoxYear" x:FieldModifier="public" FontSize="17" Cursor="Hand" BorderBrush="#FF8829EC" BorderThickness="0,0,0,2"
+                         TextChanged="searchTextBoxYear_TextChanged" KeyUp="searchTextBoxYear_KeyUp" Height="39" FontFamily="kanit" Background="#FFEDEDED"/>
+                                    <Button  x:Name="btnCkickYear" Width="10" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="53,0,0,0" Padding="0,5,0,5" Click="btnCkickYear_Click">
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock Text="▼" FontSize="10" HorizontalAlignment="Center" Foreground="#FF8829EC"/>
+                                        </StackPanel>
+                                    </Button>
+                                    <Button  x:Name="btnClearCkickYear" Width="10" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" Margin="53,0,0,0" Padding="0,5,0,5" Click="btnClearCkickYear_Click" FontWeight="Bold" Visibility="Collapsed">
+                                        <StackPanel Orientation="Vertical">
+                                            <TextBlock Text="X" FontSize="10" Height="13" FontWeight="Bold" Foreground="#FFFD0000"/>
+                                        </StackPanel>
+                                    </Button>
+                                    <Popup x:Name="popupYear" Placement="Bottom" StaysOpen="False" AllowsTransparency="True" HorizontalOffset="0" VerticalOffset="2">
+                                        <Border BorderBrush="#599d7e" BorderThickness="1" Background="White" VerticalAlignment="Bottom" CornerRadius="5">
+                                            <ListBox x:Name="autoCompleteListBoxYear" Height="100" Width="100" SelectionChanged="autoCompleteListBoxYear_SelectionChanged" MouseLeftButtonUp="autoCompleteListBoxYear_MouseLeftButtonUp"/>
+                                        </Border>
+                                    </Popup>
+                                </Grid>
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Popup>
+
+    </Grid>
+</UserControl>

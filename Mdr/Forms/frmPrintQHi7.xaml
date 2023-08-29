@@ -1,0 +1,119 @@
+﻿<Window x:Class="Mdr.Forms.frmPrintQHi7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mdr.Forms"
+        mc:Ignorable="d"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        
+        FontFamily="Kanit" FontSize="18" Foreground="Black"
+        WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded"
+        Title="frmPrintQHi7" ResizeMode="CanResize" 
+        >
+
+    <!--<Button x:Name="btnSettingClose" HorizontalAlignment="Right"  Visibility="Visible" Margin="0,2,2,0" Background="Red" BorderBrush="{x:Null}" Foreground="White" VerticalAlignment="Top" Height="29" Width="31" Click="btnSettingClose_Click" Cursor="Hand">
+            <Grid>
+                <StackPanel Orientation="Horizontal" Height="12">
+                    <materialDesign:PackIcon Kind="Close" Foreground="White"/>
+
+                </StackPanel>
+            </Grid>
+        </Button>-->
+    <ScrollViewer>
+        <StackPanel x:Name="Allpage" Orientation="Vertical">
+            <StackPanel x:Name="View" Orientation="Vertical" HorizontalAlignment="Center">
+
+                <Label x:Name="lbhostName" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="โรงพยาบาลน้ำยืน" Padding="10,6,10,0" HorizontalAlignment="Stretch"/>
+                <Label x:Name="lbClinic" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="เวชปฏิบัติทั่วไป" Padding="10,0,10,0" HorizontalAlignment="Stretch"></Label>
+                <Label x:Name="lbHn" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="HN: 167717" Padding="10,0,10,0" HorizontalAlignment="Stretch"></Label>
+                <Label x:Name="lbFullname" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="นายมนูญศักดิ์ สิทธิดำรงค์" Padding="10,0,10,0" HorizontalAlignment="Stretch"></Label>
+                <Label x:Name="lbBirthday" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="วดป.เกิด 2/12/2534" Padding="5,0,10,0" HorizontalAlignment="Stretch"></Label>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Label x:Name="lbSex" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="เพศ: ชาย" Padding="10,0,5,0"></Label>
+                    <Label x:Name="lbAge" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="อายุ: 31 ปี" Padding="5,0,10,0"></Label>
+                </StackPanel>
+                <Label x:Name="lbPttype" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="จ่ายตรงกรมบัญชีกลาง(รูดบัตร EDC)" Padding="10,0,10,0" HorizontalAlignment="Stretch"></Label>
+                <Label x:Name="lbQueue" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="คิวที่: O-1" Padding="10,0,10,0" HorizontalAlignment="Stretch"></Label>
+                <Label x:Name="lbQueuetype" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="ประเภทคิว :เจ้าหน้าที่" Padding="10,0,0,0" HorizontalAlignment="Stretch"></Label>
+                <Label x:Name="lbAuthenCode" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="Authen code:P99999999" Padding="10,0,10,0" HorizontalAlignment="Stretch"></Label>
+                <Label x:Name="lbFreetext" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black"  Content="หมายเหตุ" Padding="10,0,10,0" HorizontalAlignment="Left" VerticalContentAlignment="Top"/>                
+                <Label x:Name="lbQrcode" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="สแกนคิวอาร์โค้ด" Padding="10,0,10,0" HorizontalAlignment="Stretch"></Label>
+                <Image Grid.Row="1" x:Name="qrCodeImage" Height="133" Width="133"/>
+                <Label x:Name="lbDatenow" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" Content="วันที่ 18 ก.ค. 2566 21:33:4" Padding="10,0,10,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel x:Name="stpSeting" Orientation="Vertical" HorizontalAlignment="Left" Visibility="Visible" Margin="0,0,0,5">
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbcbbSpritername"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="เครื่องพิมพ์" Padding="10,0,10,0" FontSize="12" Height="30" Margin="5,0,0,2" Width="80"/>
+                    <hc:ComboBox x:Name="cbbSpritername" Padding="8,0,8,0" Width="205" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" Cursor="Hand"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbScoppy"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="จำนวนแผ่น" Padding="10,0,10,0" FontSize="12" Height="30" Margin="5,0,0,2" Width="150"/>
+                    <hc:TextBox x:Name="tbScoppy" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" Cursor="Hand"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbSwidth"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="กำหนดความกว้างกระดาษ" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbSwidth" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbSwidth_KeyDown"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbShostname"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="ชื่อโรงพยาบาล" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbShostname" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbShostname_KeyDown"></hc:TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbSclinic"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="คลินิก" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbSclinic" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbSclinic_KeyDown"></hc:TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbShn"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="HN" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbShn" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbShn_KeyDown"></hc:TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbSfullname"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="ชื่อ-สกุล" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbSfullname" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbSfullname_KeyDown"></hc:TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbSbirthday"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="ว/ด/ป.เกิด" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbSbirthday" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbSbirthday_KeyDown"></hc:TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbSsecage"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="เพศ-อายุ" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbSsecage" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbSsecage_KeyDown"></hc:TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbSpttype"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="สิทธิ์การรักษา" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbSpttype" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbSpttype_KeyDown"></hc:TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbSqueue"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="คิว" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbSqueue" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbSqueue_KeyDown"></hc:TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbStypequeue"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="ประเภทคิว" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbStypequeue" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbStypequeue_KeyDown"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbSauthencode"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="AuthenCode" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbSauthencode" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbSauthencode_KeyDown"></hc:TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbFreetext"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="หมายเหตุ" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbFreetext" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbFreetext_KeyDown"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label x:Name="lbtbSdatenow"  Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Content="วันที่" Padding="10,0,10,0" FontSize="12" HorizontalAlignment="Left" Height="30" Margin="5,0,0,2" Width="150"></Label>
+                    <hc:TextBox x:Name="tbSdatenow" Padding="8,0,8,0" Width="135" FontSize="12" Height="21" Margin="5,0,5,2" BorderBrush="#FF62C1A0" KeyDown="tbSdatenow_KeyDown"></hc:TextBox>
+                </StackPanel>
+                <Button x:Name="btnSettingSave" HorizontalAlignment="Center" Width="287" Visibility="Visible" Click="btnSettingSave_Click" Margin="5,5,5,5" Background="#FF62C1A0" BorderBrush="{x:Null}" Foreground="White" Cursor="Hand">
+                    <Grid>
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="ContentSave" Foreground="White"></materialDesign:PackIcon>
+                            <Label Content="บันทึก" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="30"></Label>
+                        </StackPanel>
+                    </Grid>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Window>

@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\WPF\\Hi7Update\\Hi7\\Hi7.csproj": {}
+  },
+  "projects": {
+    "D:\\WPF\\Hi7Update\\Hi7\\Hi7.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WPF\\Hi7Update\\Hi7\\Hi7.csproj",
+        "projectName": "Hi7",
+        "projectPath": "D:\\WPF\\Hi7Update\\Hi7\\Hi7.csproj",
+        "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
+        "outputPath": "D:\\WPF\\Hi7Update\\Hi7\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "HandyControls": {
+              "target": "Package",
+              "version": "[3.3.11, )"
+            },
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.46, )"
+            },
+            "JWT": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "LibGit2Sharp": {
+              "target": "Package",
+              "version": "[0.27.2, )"
+            },
+            "LibGit2Sharp.NativeBinaries": {
+              "target": "Package",
+              "version": "[2.0.320, )"
+            },
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "MaterialDesignThemes": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.11.7, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "ThaiNationalIDCard": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

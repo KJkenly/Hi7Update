@@ -1,0 +1,144 @@
+﻿<Window x:Class="Mdr.Forms.frmInsure"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:UsercontrolHi7="clr-namespace:Hi7.UsercontrolHi7;assembly=Hi7" 
+        xmlns:local="clr-namespace:Mdr.Forms"
+        mc:Ignorable="d"
+        Title="frmInsure" Height="450" Width="1000"
+        FontFamily="Kanit" FontSize="18" Foreground="Black" 
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded"
+        
+        >
+    <Border CornerRadius="10" Background="#FFD2E5FF" MouseDown="Border_MouseDown">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="33*"/>
+            </Grid.RowDefinitions>
+            <Border CornerRadius="10,10,0,0" Grid.Row="0" Background="#FF6BAAFF" Margin="0,0,0,4"/>
+            <Grid Grid.Row="0" Margin="0,0,0,4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" Margin="0,0,133,0">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="CardAccountDetails" Foreground="White" Margin="10,0,0,0" VerticalAlignment="Center" Height="40" Width="32"/>
+                        <Label Content="บันทึกข้อมูลสิทธิ์" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontSize="20"/>
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="เลขบัตรประชาชน" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:TextBox x:Name="txtIDCard"  BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="230" Margin="5,0,0,0" FontSize="17" Height="39" Background="#FFA7CCFF"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="ชื่อ-สกุล" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:TextBox x:Name="txtFullname"  BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="230" Margin="5,0,0,0" FontSize="17" Height="39" Background="#FFA7CCFF"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="หมายเลขบัตร(UC)" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:TextBox x:Name="txtNumbercardid"  BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="295" Margin="5,0,0,0" FontSize="17" Height="39" Background="#FFA7CCFF" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="lbtxtidpttype" Content="หมายเลขสิทธิ์(หลัก)" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:TextBox x:Name="txtPttypenumber"  BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="158" Margin="5,0,0,0" FontSize="17" Height="39" Background="#FFA7CCFF" KeyDown="txtPttypenumber_KeyDown" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Label x:Name="lbtxtnamepttype" Content="ชื่อสิทธิ์(หลัก)" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:ComboBox x:Name="cbbPttypename" IsTextSearchEnabled="True" IsEditable="True" hc:AutoComplete="True" BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="329" Margin="5,0,0,0" FontSize="17" Height="40" Background="#FFA7CCFF" VerticalContentAlignment="Top" SelectionChanged="cbbPttypename_SelectionChanged"/>
+                        </StackPanel>
+                        <StackPanel x:Name="spsubpttype" Orientation="Vertical">
+                            <Label Content="หมายเลขสิทธิ์(รอง)" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:TextBox x:Name="txtPttypenumbersub"  BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="158" Margin="5,0,0,0" FontSize="17" Height="39" Background="#FFA7CCFF" KeyDown="txtPttypenumber_KeyDown" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                        <StackPanel x:Name="spsubpttypename" Orientation="Vertical">
+                            <Label Content="ชื่อสิทธิ์(รอง)" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:ComboBox x:Name="cbbPttypenamesub" IsTextSearchEnabled="True" IsEditable="True" hc:AutoComplete="True" BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="327" Margin="5,0,0,0" FontSize="17" Height="40" Background="#FFA7CCFF" VerticalContentAlignment="Top" SelectionChanged="cbbPttypename_SelectionChanged"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="วันที่มีสิทธิ์" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <UsercontrolHi7:UserControlDatebox x:Name="dStartdate" Panel.ZIndex="1" FontSize="14" TextBoxColor="#FFA7CCFF" Foreground="{x:Null}" TextBoxBorderBrush="#FF0056FF" Margin="5,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="วันที่หมดสิทธิ์" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <UsercontrolHi7:UserControlDatebox x:Name="dEnddate" Panel.ZIndex="1" FontSize="14" TextBoxColor="#FFA7CCFF" Foreground="{x:Null}" TextBoxBorderBrush="#FF0056FF" Margin="5,0,0,0"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="หมายเหตุ" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:TextBox x:Name="txtNote" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="518" Margin="5,0,0,0" FontSize="17" Height="39" Background="#FFA7CCFF" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="ค้นหา" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:TextBox x:Name="txtMainhostfind"  BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="100" Margin="5,0,0,0" FontSize="17" Height="39" Background="#FFA7CCFF" KeyDown="txtMainhostfind_KeyDown"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="สถานบริการหลัก" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:TextBox x:Name="cbbMainhost"  BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="360" Margin="5,0,0,0" FontSize="17" Height="39" Background="#FFA7CCFF"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="ค้นหา" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:TextBox x:Name="txtSubhostfind"  BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="100" Margin="5,0,0,0" FontSize="17" Height="39" Background="#FFA7CCFF" KeyDown="txtSubhostfind_KeyDown"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Label Content="สถานบริการรอง" Background="{x:Null}" BorderBrush="{x:Null}" HorizontalAlignment="Left" />
+                            <hc:TextBox x:Name="cbbSubhost"  BorderBrush="#FF0056FF" BorderThickness="0,0,0,2" Width="414" Margin="5,0,0,0" FontSize="17" Height="39" Background="#FFA7CCFF"/>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Button x:Name="btnsave" Background="#FF6BAAFF" Width="990" Margin="0,5,0,0" Height="50" BorderBrush="{x:Null}" Click="btnsave_Click"  >
+                            <Grid Height="31" Width="250" HorizontalAlignment="Center" >
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="ContentSave" Foreground="White" Height="31" Width="36" RenderTransformOrigin="0.5,0.5" Margin="50,0,0,0">
+                                        <materialDesign:PackIcon.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="0"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </materialDesign:PackIcon.RenderTransform>
+                                    </materialDesign:PackIcon>
+                                    <Label Padding="0" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontSize="18" Content="บันทึก [Save]" Width="110" Height="29" Margin="0,0,0,0" VerticalAlignment="Bottom"/>
+                                </StackPanel>
+                            </Grid>
+                        </Button>
+                        <Button x:Name="btnEdit" Background="#FFFF6B6B" Width="990" Margin="0,5,0,0" Height="50" BorderBrush="{x:Null}" Visibility="Collapsed" Click="btnEdit_Click">
+                            <Grid Height="31" Width="250" HorizontalAlignment="Center" >
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Kind="EditBox" Foreground="White" Height="31" Width="36" RenderTransformOrigin="0.5,0.5" Margin="50,0,0,0">
+                                        <materialDesign:PackIcon.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="0"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </materialDesign:PackIcon.RenderTransform>
+                                    </materialDesign:PackIcon>
+                                    <Label Padding="0" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontSize="18" Content="แก้ไขสิทธิ์ [Update]" Width="152" Height="29" Margin="0,0,0,0" VerticalAlignment="Bottom"/>
+                                </StackPanel>
+                            </Grid>
+                        </Button>
+                    </StackPanel>
+                    
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

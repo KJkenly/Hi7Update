@@ -1,0 +1,265 @@
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Hi7.deps.json
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Hi7.runtimeconfig.json
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Hi7.exe
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Opd.deps.json
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Opd.runtimeconfig.json
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Opd.exe
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Mdr.exe
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Mdr.deps.json
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Mdr.runtimeconfig.json
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Mdr.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Mdr.pdb
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\HandyControl.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\JWT.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Mask.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\MaterialDesignColors.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\MaterialDesignThemes.Wpf.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Core.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Newtonsoft.Json.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\pcsc-sharp.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\RestSharp.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Syncfusion.Licensing.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Syncfusion.SfChart.WPF.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\ThaiNationalIDCard.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Hi7.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Opd.dll
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Hi7.pdb
+E:\Project WPF\HI7V003\hi7\Mdr\bin\Release\net6.0-windows\Opd.pdb
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr.csproj.AssemblyReference.cache
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmCheckappoint.g.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmFillterDataGrid.g.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmMdr.g.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmRefer.g.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferIn.g.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferins.g.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferOut.g.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmWebview.g.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\App.g.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr_Content.g.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr_MarkupCompile.cache
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr_MarkupCompile.lref
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\App.baml
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmCheckappoint.baml
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmFillterDataGrid.baml
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmMdr.baml
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmRefer.baml
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferIn.baml
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferins.baml
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferOut.baml
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmWebview.baml
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr.g.resources
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr.GeneratedMSBuildEditorConfig.editorconfig
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr.AssemblyInfoInputs.cache
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr.AssemblyInfo.cs
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr.csproj.CoreCompileInputs.cache
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr.csproj.CopyComplete
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr.dll
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\refint\Mdr.dll
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr.pdb
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\Mdr.genruntimeconfig.cache
+E:\Project WPF\HI7V003\hi7\Mdr\obj\Release\net6.0-windows\ref\Mdr.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Hi7.deps.json
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Hi7.runtimeconfig.json
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Hi7.exe
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Opd.deps.json
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Opd.runtimeconfig.json
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Opd.exe
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Mdr.exe
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Mdr.deps.json
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Mdr.runtimeconfig.json
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Mdr.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Mdr.pdb
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\FontAwesome.WPF.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Guna.UI2.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\HandyControl.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\JWT.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Mask.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\MaterialDesignColors.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\MaterialDesignThemes.Wpf.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Newtonsoft.Json.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\pcsc-sharp.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\RestSharp.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Syncfusion.Licensing.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Syncfusion.SfChart.WPF.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\System.Management.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\ThaiNationalIDCard.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\XamlAnimatedGif.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Hi7.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Opd.dll
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Hi7.pdb
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Opd.pdb
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.csproj.AssemblyReference.cache
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmAuthenservice.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmCheckappoint.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmFindhn.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmHndouble.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmInsure.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmLastfiveauthencode.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmMdr.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmpopreferin.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmPopupCheckReferIn.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmPopupclinic.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmPopuppttype.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmPrintall.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmPrintQHi7.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmprtcardq.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmRefer.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferIn.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferins.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferOut.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmSearchInfro.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmWait.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmWebview.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\App.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr_Content.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr_MarkupCompile.cache
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr_MarkupCompile.lref
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\App.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmAuthenservice.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmCheckappoint.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmFindhn.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmHndouble.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmInsure.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmLastfiveauthencode.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmMdr.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmpopreferin.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmPopupCheckReferIn.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmPopupclinic.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmPopuppttype.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmPrintall.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmPrintQHi7.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmprtcardq.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmRefer.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferIn.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferins.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmReferOut.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmSearchInfro.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmWait.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Forms\frmWebview.baml
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.g.resources
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.Properties.Resources.resources
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.csproj.GenerateResource.cache
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.GeneratedMSBuildEditorConfig.editorconfig
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.AssemblyInfoInputs.cache
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.AssemblyInfo.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.csproj.CoreCompileInputs.cache
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.csproj.CopyComplete
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.dll
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\refint\Mdr.dll
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.pdb
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.genruntimeconfig.cache
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\ref\Mdr.dll
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\UserControl\ucHi7dialog.g.cs
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\UserControl\ucHi7dialog.baml
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Mdr.dll.manifest
+D:\WPF\hi7\Mdr\bin\Release\net6.0-windows\Mdr.application
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.dll.manifest
+D:\WPF\hi7\Mdr\obj\Release\net6.0-windows\Mdr.application
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Hi7.deps.json
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Hi7.runtimeconfig.json
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Hi7.exe
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Mdr.exe
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Mdr.deps.json
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Mdr.runtimeconfig.json
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Mdr.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Mdr.pdb
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\FontAwesome.WPF.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Guna.UI2.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\HandyControl.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\JWT.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\MaterialDesignColors.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\MaterialDesignThemes.Wpf.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Core.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Microsoft.Web.WebView2.WinForms.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Microsoft.Web.WebView2.Wpf.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Newtonsoft.Json.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\pcsc-sharp.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\RestSharp.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\System.Management.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\ThaiNationalIDCard.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\XamlAnimatedGif.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Hi7.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Hi7.pdb
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.csproj.AssemblyReference.cache
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmAuthenservice.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmCheckappoint.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmFindhn.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmHndouble.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmInsure.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmLastfiveauthencode.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmMdr.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmpopreferin.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmPopupCheckReferIn.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmPopupclinic.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmPopuppttype.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmPrintall.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmPrintQHi7.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmprtcardq.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmRefer.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmReferIn.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmReferins.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmReferOut.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmSearchInfro.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmWait.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmWebview.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\UserControl\ucHi7dialog.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\App.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr_Content.g.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr_MarkupCompile.cache
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr_MarkupCompile.lref
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\App.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmAuthenservice.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmCheckappoint.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmFindhn.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmHndouble.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmInsure.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmLastfiveauthencode.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmMdr.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmpopreferin.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmPopupCheckReferIn.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmPopupclinic.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmPopuppttype.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmPrintall.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmPrintQHi7.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmprtcardq.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmRefer.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmReferIn.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmReferins.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmReferOut.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmSearchInfro.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmWait.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Forms\frmWebview.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\UserControl\ucHi7dialog.baml
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.g.resources
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.Properties.Resources.resources
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.csproj.GenerateResource.cache
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.GeneratedMSBuildEditorConfig.editorconfig
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.AssemblyInfoInputs.cache
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.AssemblyInfo.cs
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.csproj.CoreCompileInputs.cache
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.csproj.CopyComplete
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.dll
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\refint\Mdr.dll
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.pdb
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.genruntimeconfig.cache
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\ref\Mdr.dll
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Mdr.dll.manifest
+D:\WPF\Hi7Publish\Mdr\bin\Release\net6.0-windows\Mdr.application
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.dll.manifest
+D:\WPF\Hi7Publish\Mdr\obj\Release\net6.0-windows\Mdr.application

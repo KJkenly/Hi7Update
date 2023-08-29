@@ -1,0 +1,61 @@
+﻿<Window x:Class="Mdr.Forms.frmHndouble"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        xmlns:local="clr-namespace:Mdr.Forms"
+        mc:Ignorable="d"
+        FontFamily="Kanit" FontSize="18" Foreground="Black" 
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None" WindowStartupLocation="CenterScreen" MouseDown="moveallposition" Loaded="Window_Loaded"
+        Title="frmHndouble" Width="600" Height="800">
+    <Border CornerRadius="10" Background="#FFD8D8D8">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="731*"/>
+                <RowDefinition Height="24*"/>
+            </Grid.RowDefinitions>
+            <Border CornerRadius="10,10,0,0" Grid.Row="0" Background="#599D7E"/>
+            <Grid Grid.Row="0" Margin="0,0,0,4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="458"/>
+                    <ColumnDefinition Width="142"/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="ClipboardTextSearch" Foreground="White" Margin="10,0,0,0" VerticalAlignment="Center" Height="40" Width="32"/>
+                        <Label Content="แสดงรายการ HN" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontSize="20"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,5,0">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Width="67" Height="47">
+                        <Button Margin="2" Style="{StaticResource ButtonSuccess}" hc:IconElement.Geometry="{StaticResource WindowMinGeometry}" Background="White" Foreground="Black" Click="ClickMin"/>
+                        <Button Margin="2" Style="{StaticResource ButtonSuccess}" hc:IconElement.Geometry="{StaticResource CloseGeometry}" Background="Red" Foreground="White" Click="ClickClose"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+            <Grid Grid.Row="1">
+                <StackPanel Orientation="Vertical">
+                    <DataGrid x:Name="dataGridhn" d:ItemsSource="{d:SampleData ItemCount=14}" AutoGenerateColumns="True" Margin="5" Background="#FF599D7E" GridLinesVisibility="All" IsReadOnly="True" MouseDoubleClick="dataGridhn_MouseDoubleClick" />
+                </StackPanel>
+
+
+            </Grid>
+
+
+
+
+
+
+
+
+            <Grid Grid.Row="2">
+                <Border CornerRadius="0 0 10 10" Background="#FF599D7E"></Border>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
