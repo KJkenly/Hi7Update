@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Mdr/1.4.8": {
+      "Mdr/1.4.9": {
         "dependencies": {
           "EPPlus": "6.2.8",
           "FontAwesome.WPF": "4.7.0.9",
           "Guna.UI2.WinForms": "2.0.4",
           "HandyControls": "3.3.11",
-          "Hi7": "1.0.3",
+          "Hi7": "1.0.4",
           "JWT": "9.0.0",
           "MaterialDesignColors": "2.0.6",
           "MaterialDesignThemes": "4.5.0",
@@ -626,7 +626,7 @@
           }
         }
       },
-      "Hi7/1.0.3": {
+      "Hi7/1.0.4": {
         "dependencies": {
           "HandyControls": "3.3.11",
           "HtmlAgilityPack": "1.11.46",
@@ -649,7 +649,7 @@
     }
   },
   "libraries": {
-    "Mdr/1.4.8": {
+    "Mdr/1.4.9": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1074,7 +1074,7 @@
       "path": "xamlanimatedgif/2.1.0",
       "hashPath": "xamlanimatedgif.2.1.0.nupkg.sha512"
     },
-    "Hi7/1.0.3": {
+    "Hi7/1.0.4": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
