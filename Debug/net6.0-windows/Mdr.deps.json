@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Mdr/1.5.7": {
+      "Mdr/1.5.8": {
         "dependencies": {
           "EPPlus": "6.2.8",
           "FontAwesome.WPF": "4.7.0.9",
@@ -692,7 +692,7 @@
     }
   },
   "libraries": {
-    "Mdr/1.5.7": {
+    "Mdr/1.5.8": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
