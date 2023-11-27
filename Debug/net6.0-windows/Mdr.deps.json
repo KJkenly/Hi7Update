@@ -671,6 +671,7 @@
       },
       "Hi7/1.0.6": {
         "dependencies": {
+          "FontAwesome.WPF": "4.7.0.9",
           "HandyControls": "3.3.11",
           "HtmlAgilityPack": "1.11.46",
           "JWT": "9.0.0",
