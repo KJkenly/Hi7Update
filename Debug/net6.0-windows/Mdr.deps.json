@@ -12,7 +12,7 @@
           "FontAwesome.WPF": "4.7.0.9",
           "Guna.UI2.WinForms": "2.0.4",
           "HandyControls": "3.3.11",
-          "Hi7": "1.0.7",
+          "Hi7": "1.0.8",
           "JWT": "9.0.0",
           "MaterialDesignColors": "2.0.6",
           "MaterialDesignThemes": "4.5.0",
@@ -728,7 +728,7 @@
           }
         }
       },
-      "Hi7/1.0.7": {
+      "Hi7/1.0.8": {
         "dependencies": {
           "FontAwesome.WPF": "4.7.0.9",
           "HandyControls": "3.3.11",
@@ -1233,7 +1233,7 @@
       "path": "xamlanimatedgif/2.1.0",
       "hashPath": "xamlanimatedgif.2.1.0.nupkg.sha512"
     },
-    "Hi7/1.0.7": {
+    "Hi7/1.0.8": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
