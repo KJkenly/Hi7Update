@@ -1,3 +1,2 @@
-2024/04/10-10:18:55.363 4e10 Reusing MANIFEST D:\WPF\HI7 Prototype\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\shared_proto_db/MANIFEST-000001
-2024/04/10-10:18:55.363 4e10 Recovering log #3
-2024/04/10-10:18:55.364 4e10 Reusing old log D:\WPF\HI7 Prototype\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\shared_proto_db/000003.log 
+2024/08/22-15:35:49.017 5618 Creating DB D:\WPF\HI7 Prototype\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\shared_proto_db since it was missing.
+2024/08/22-15:35:49.018 5618 Reusing MANIFEST D:\WPF\HI7 Prototype\Mdr\bin\Debug\net6.0-windows\Mdr.exe.WebView2\EBWebView\Default\shared_proto_db/MANIFEST-000001
