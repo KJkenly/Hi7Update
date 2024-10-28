@@ -9,6 +9,7 @@
       "Mdr/1.6.8": {
         "dependencies": {
           "ClosedXML": "0.102.2",
+          "CountryFlag": "2.1.0",
           "FontAwesome.WPF": "4.7.0.9",
           "HandyControls": "3.5.3",
           "Hi7": "1.0.8",
@@ -64,6 +65,14 @@
           "lib/net6.0/CommunityToolkit.HighPerformance.dll": {
             "assemblyVersion": "8.2.0.0",
             "fileVersion": "8.2.2.1"
+          }
+        }
+      },
+      "CountryFlag/2.1.0": {
+        "runtime": {
+          "lib/CountryFlag.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
           }
         }
       },
@@ -1312,6 +1321,13 @@
       "sha512": "sha512-+zIp8d3sbtYaRbM6hqDs4Ui/z34j7DcUmleruZlYLE4CVxXq+MO8XJyIs42vzeTYFX+k0Iq1dEbBUnQ4z/Gnrw==",
       "path": "communitytoolkit.highperformance/8.2.2",
       "hashPath": "communitytoolkit.highperformance.8.2.2.nupkg.sha512"
+    },
+    "CountryFlag/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0El8tliJIqVfbhLtMLPCNcyNST2PSztnK+I5bK4+o4rFKcNKS9kRpjI5H/xfpNBIBcLAdQ9AKaUnGNiM6DAzbQ==",
+      "path": "countryflag/2.1.0",
+      "hashPath": "countryflag.2.1.0.nupkg.sha512"
     },
     "DocumentFormat.OpenXml/2.16.0": {
       "type": "package",
